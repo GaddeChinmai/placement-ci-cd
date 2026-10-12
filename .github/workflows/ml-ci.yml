@@ -1,4 +1,4 @@
-name: Student Result ML CI
+name: Placement Result ML CI
 
 on:
   push:
@@ -45,8 +45,8 @@ jobs:
         with:
           name: student-result-ml-artifacts
           path: |
-            student_result_model.pkl
+            placement_result_model.pkl
             metrics.json
-            student_results.csv
+            placements_results.csv
           if-no-files-found: error
           retention-days: 7
